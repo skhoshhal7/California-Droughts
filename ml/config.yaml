@@ -1,0 +1,12 @@
+temporal_config:
+    
+    feature_start_time: '2014-01-01' # The first date at which we possess data from all of our sources
+    feature_end_time: '2022-11-01'   # latest date included in features
+    label_start_time: '2014-06-01' # earliest date for which labels are avialable
+    label_end_time: '2022-10-01' # latest date included in label data that we have
+    model_update_frequency: 12 # in months # how frequently to retrain models. Our model is designed to be run every year
+    training_as_of_date_frequencies: 1 # in months  # time between cutoff dates in the training matrix
+    min_training_histories: 24 # in months # the minimum amount of history available at a cutoff date
+    max_training_histories: 36 # in months # length of time included in a train matrix
+    training_label_timespans: 12 # in months # time period across which outcomes are labeled in train matrices
+    test_label_timespans: 12 # in months # time period across which outcomes are labeled in train matrices
